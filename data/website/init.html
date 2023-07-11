@@ -1,0 +1,34 @@
+<html>
+    <title>Suika Remote Controler Initial Configuration</title>
+    <body>
+        <div id="mode">
+            <h1>The mode</h1>
+            <p>As a station, the controler connects to an WIFI to get access to your network;
+            as an access point, the controler creates an WIFI to let you connect to it.
+            </p>
+            <form>
+                <input type="radio" name="mode" value="STA" checked>Station<br>
+                <input type="radio" name="mode" value="AP">Access Point<br>
+            </form>
+        </div>
+        <div id="credentials" hidden>
+            <h1>The WIFI credentials</h1>
+            <p>Please set up the WIFI credentials.</p>
+            <form>
+                <input type="text" name="ssid" placeholder="SSID"><br>
+                <input type="password" name="password" placeholder="Password"><br>
+            </form>
+        </div>
+        <div id="pinout" hidden>
+            <h1>Reconfigure the pinout</h1>
+            <p>By default the pinout should be correct. Just click Next if you don't know what it means.</p>
+            <form>
+                <input type="radio" name="mode" value="true">yes<br>
+                <input type="radio" name="mode" value="false" checked>No<br>
+            </form>
+        </div>
+        <input type="button" value="previous" hidden>
+        <input type="button" value="next">
+        <input type="button" value="submit" hidden>
+    </body>
+</html>
